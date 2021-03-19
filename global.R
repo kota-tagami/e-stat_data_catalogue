@@ -1,8 +1,4 @@
-library(tidyverse)
-library(shiny)
-library(shinydashboard)
-library(shinybusy)
-library(httr)
+source("packages.R")
 
 shiny_app_url <- ""
 github_url <- "https://github.com/kota-tagami/e-stat_data_catalogue.git"

@@ -9,7 +9,7 @@ server <- function(input, output, session) {
       
     searchWord <- 
       input$searchWord %>% 
-      stringi::stri_trans_nfkc() %>% 
+      stri_trans_nfkc() %>% 
       str_trim(side = "both") %>% 
       str_replace_all(pattern = " ", replacement = " AND ")
     
