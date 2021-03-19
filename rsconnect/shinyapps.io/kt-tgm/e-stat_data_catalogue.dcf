@@ -1,0 +1,12 @@
+name: e-stat_data_catalogue
+title: e-stat_data_catalogue
+username:
+account: kt-tgm
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3821209
+bundleId: 4368923
+url: https://kt-tgm.shinyapps.io/e-stat_data_catalogue/
+when: 1616166296.99036
+asMultiple: FALSE
+asStatic: FALSE
