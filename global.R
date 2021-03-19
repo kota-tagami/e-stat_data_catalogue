@@ -4,6 +4,10 @@ library(shinydashboard)
 library(shinybusy)
 library(httr)
 
+shiny_app_url <- ""
+github_url <- "https://github.com/kota-tagami/e-stat_data_catalogue.git"
+version <- "0.0.0.9000"
+
 ##---- estat-api ----
 app_id <- "b6d04cab54dc4bf98cb56c86ffcc9c2229bfbe99"
 endpoint <- "https://api.e-stat.go.jp/rest/"

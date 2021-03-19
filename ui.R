@@ -7,10 +7,10 @@ header <- dashboardHeader(
   dropdownMenu(
     type = "notifications",
     icon = icon("info"),
-    headerText = "Information",
+    headerText = paste0("ver ", version),
     badgeStatus = NULL,
     notificationItem(
-      "GitHub", icon = icon("github"), status = "primary"
+      "GitHub", icon = icon("github"), status = "primary", href = github_url
     )
   )
 )
@@ -62,7 +62,7 @@ body_getstatslist_input <- tagList(
 body_getstatslist <- 
   tabItem(
     tabName = "getStatsList",
-    h2("統計表情報取得"),
+    h2("統計表情報"),
     fluidRow(
       box(
         body_getstatslist_input,
@@ -112,7 +112,7 @@ body_getmetainfo_input <- tagList(
 body_getmetainfo <- 
   tabItem(
     tabName = "getMetaInfo",
-    h2("メタ情報取得"),
+    h2("メタ情報"),
     fluidRow(
       box(
         body_getmetainfo_input,
