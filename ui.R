@@ -92,6 +92,17 @@ body_getstatslist <-
         collapsible = F,
         width = 12
       )
+    ),
+    fluidRow(
+      box(
+        downloadButton("getStatListResTable_csv", "CSV"),
+        downloadButton("getStatListResTable_excel_csv", "CSV(Excel)"),
+        title = "Download",
+        status = "primary", 
+        solidHeader = TRUE,
+        collapsible = F,
+        width = 3
+      )
     )
   )
 
@@ -141,6 +152,17 @@ body_getmetainfo <-
         solidHeader = TRUE,
         collapsible = F,
         width = 12
+      )
+    ),
+    fluidRow(
+      box(
+        downloadButton("getMetaInfoResTable_csv", "CSV"),
+        downloadButton("getMetaInfoResTable_excel_csv", "CSV(Excel)"),
+        title = "Download",
+        status = "primary", 
+        solidHeader = TRUE,
+        collapsible = F,
+        width = 3
       )
     )
   )
